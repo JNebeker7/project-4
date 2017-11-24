@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Char Sheet</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="eyebrow">
+        JNebeker@gmail.com
+      </div>
+
+      <nav class="topNav" id="dndActions">
+        <button class="dndButtons" id="Create">Create</button>
+        <div class="topRightNav" id="userLoginButtons">
+          <button class="dndButtons" id="Register">Register</button>
+          <button class="dndButtons" id="Login">Login</button>
+        </div>
+      </nav>
+
+      <div class="wrapper">
+        <div class="hero">
+          <div class="welcome">
+            <h1>D&D Character Sheets</h1>
+          </div>
+        </div>
+
+        <div id="registerModal" class="modal">
+          <div class="sheet" id="registerSheet">
+            <div class="header">
+              <h2>Register</h2>
+              <img src="https://i.imgur.com/1WRBw0E.png" id="headerImage"/>
+            </div>
+            <div class="form">
+              <label id="userNameLabel" class="userLoginClass">Username<input type="text" id="registerUserNameInput"/></label>
+              <label id="emailLabel" class="userLoginClass">Email<input type="text" id="registerEmailInput"/></label>
+              <label id="passwordLabel" class="userLoginClass">Password<input type="password" id="registerPasswordInput"/></label>
+              <div id = "warning">
+              </div>
+              <button class="registerButtonClass" id="registerButtonId">CREATE ACCOUNT</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="loginModal" class="modal">
+          <div class="sheet" id="loginSheet">
+            <div class="header">
+              <h2>Login</h2>
+              <img src="https://i.imgur.com/1WRBw0E.png" id="headerImage"/>
+            </div>
+            <div class="form">
+              <label id="emailLabel" class="userLoginClass">Email <input type="text" id="loginEmailInputInput"/></label>
+              <label id="passwordLabel" class="userLoginClass">Password<input type="password" id="loginPasswordInput"/></label>
+              <div id = "unauthorized">
+              </div>
+              <button class="registerButtonClass" id="authenticationButtonId">LOGIN</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="sheetModal" class="modal">
+          <div class="sheet" id="dndSheet">
+            <div class="header">
+              <h2>D&D Character Sheet</h2>
+              <img src="https://i.imgur.com/1WRBw0E.png" id="headerImage"/>
+            </div>
+            <div class="form">
+              <label id="charLabel">CHARACTER NAME <input type="text" class="charLabel" id="CHAR"/></label>
+              <label id="playerLabel">PLAYER <input type="text" class="charLabel" id="PLAYER"/></label><br>
+              <label id="charLabel">CLASS AND LEVEL <input type="text" class="charLabel" id="LVL"/></label>
+              <label id="raceLabel">RACE <input type="text" class="raceInput" id="RACE"/></label>
+              <label id="raceLabel">AGE <input type="text" class="raceInput" id="AGE"/></label>
+              <label id="raceLabel">GENDER <input type="text" class="raceInput" id="GENDER"/></label>
+            </div>
+          <div class="AaP">
+            <div class="allStats">
+              <div class="stats">
+                <p id="attributes">ATTRIBUTES</p>
+                <label class="attributesBox">STR </label>
+                <label class="attributesBox">DEX </label>
+                <label class="attributesBox">CON </label>
+                <label class="attributesBox">INT </label>
+                <label class="attributesBox">WIS </label>
+                <label class="attributesBox">CHA </label>
+              </div>
+              <div class="statsFilled">
+                <label class="attributesBox" id="STR">??? </label>
+                <label class="attributesBox" id="DEX">??? </label>
+                <label class="attributesBox" id="CON">??? </label>
+                <label class="attributesBox" id="INT">??? </label>
+                <label class="attributesBox" id="WIS">??? </label>
+                <label class="attributesBox" id="CHA">??? </label>
+              </div>
+            </div>
+                        <div class="portraitDiv">
+                          <img src="" id="portrait">
+                        </div>
+          </div>
+          <div id="sheetFoot">
+            <button class="SaveDeleteButton" id="saveButton">Save</button>
+            <button class="SaveDeleteButton" id="deleteButton">Delete</button>
+          </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="collection" id="collectionSheet">
+          <div class="characterFrame">
+            <img src="https://i.imgur.com/U515hza.png" id="imageFrame"/>
+            <div class="characterInfo">
+              <label class="characterName">Artorias</label>
+              <label class="characterLvl">wizard</label>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    <script src="domfun.js"></script>
+</body>
+
+</html>
